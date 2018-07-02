@@ -1,0 +1,4 @@
+
+th:not(.date):after{
+	display: none !important;
+}

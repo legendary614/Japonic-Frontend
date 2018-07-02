@@ -1,0 +1,344 @@
+.details .sidemenu button {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.details .sidemenu button:last-child{
+  margin-bottom: 0;
+}
+.details .sidemenu {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+    
+}
+.details .tab-pane .leftmenu .amazingslider-wrapper-1{
+  /*//padding: 20px;
+  float: left;
+  //border: 1px solid #ccc; 
+    //background: #fff;*/
+}
+.details .leftmenu h1{
+  margin-top: 0;
+}
+.details .tab-pane{
+  margin-top: 40px
+}
+.tab-pane.statistics{
+    background: #fff;
+    padding: 10px;
+}
+.tab-pane.statistics table{
+  border: 1px solid #eee;
+}
+.tab-pane ul.years li{
+  border-radius: 0px;
+  padding: 0;
+}
+.tab-pane ul.years li a{
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+}
+ul.years li.list-group-item a:hover {
+    background: #ddd;
+    text-decoration: none;
+}
+
+
+.details_ul,.auction_sheet,.leftmenu{
+  
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+.details .leftmenu{
+  margin: 0;
+}
+
+.details_ul label.title span{
+  float: right;
+  padding-right: 45px;
+}
+.details_ul label{
+  width: 60%;
+  margin-bottom: 0px; 
+    font-weight: normal;
+
+}
+.details_ul label.title{
+  width: 40%;
+}
+.details_ul ul li{
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.details_ul ul li:last-child{
+  border-bottom: 0;
+}
+.auction_sheet_img{
+  padding: 20px;
+  border: 1px solid #ccc;
+    background: #fff;
+}
+.details_ul ul{
+  border: 1px solid #ccc;
+    background: #fff;
+}
+select.years{
+  margin-bottom: 10px;
+}
+
+
+
+.details .sidemenu h4{
+    font-size: 18px;
+    background: #eee;
+    padding: 10px;
+    margin: 0px;
+}
+.details .sidemenu .sidemenu_text{
+  padding: 10px;
+}
+.share i{
+    float: left;
+    font-size: 25px;
+    width: 40px;
+}
+.share button{
+  text-align: left;
+  font-weight: bold;
+    line-height: 25px;
+}
+.fb{
+  background-color: #3b5997;
+  color: #fff;
+}
+.fb:hover{
+  background-color: #29498a;
+  color: #fff;
+}
+.insta{
+  background-color: #e13d60;
+  color: #fff;
+}
+.insta:hover{
+  background-color: #e41c46;
+  color: #fff;
+}
+.auction_sheet img{
+  width: 100%;
+}
+.statistics p{
+    font-size: 18px;
+}
+
+ul.years li a{
+  color: #000;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  margin-top: 15px;
+  height: 70px;
+  overflow: hidden;
+}
+
+
+
+
+.slider-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  /* //max-width: 1200px; */
+}
+.mystylenone{
+  display: none;
+}
+.mystyle{
+  display: block !important;
+}
+.none{
+  display: none !important;
+}
+
+.mySlides {
+ display: none;
+ /* //height: 550px; */
+}
+.mySlides img{
+ width: 100%;
+ /* //height: 100%;
+ //object-fit: cover; */
+}
+.slider-content .mySlides:first-child{
+ display: block;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+img {
+  margin-bottom: -4px;
+}
+
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+/* invoice page */
+
+.invoices .table td.actions i{
+  margin: 5px;
+}
+
+.product_caption {
+    width: 75%;
+    padding-right: 15px;
+}
+.product_caption h1{
+  font-size: 24px;
+}
+.reviews {
+    width: 25%;
+    text-align: right;
+}
+label.review_star{   
+   margin: 0;
+}
+.reviews label.review_star i{
+  font-size: 25px;
+    color: #ccc;
+
+}
+.reviews li i{
+  font-size: 15px;
+  margin-right: 5px;
+}
+.reviews label.review_star i.starfilled{  
+    color: orange;
+}
+.details .sidemenu .share .action{
+    margin-bottom: 5px;
+  }
+  .details .sidemenu .share .action:last-child{
+    margin-bottom: 0px;
+  }
+
+.auction_name label {
+    width: 100%;
+    line-height: 30px;
+}
+.place_offer{
+  width: 100%;
+  margin-top: 5px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .reviews label.review_star i{
+    font-size: 20px;
+      margin-right: 1px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .action{
+    text-align: center;
+  }
+  .details .sidemenu button{
+    width: 265px;
+  }
+  
+  
+}
+@media only screen and (max-width: 560px) {
+  .product_caption,.reviews{
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .product_caption h1{
+    font-size: 18px;
+  }
+}
+.input-class
+{
+  height:30px;
+}
+
+#modalinput
+{
+  margin-bottom: 12px;
+}
+#modalbutton
+{
+  border-radius: 12px;
+}

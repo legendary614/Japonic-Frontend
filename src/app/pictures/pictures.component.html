@@ -1,0 +1,73 @@
+<!-- <div *ngFor="let images of image_array; let i = index">
+   <img src="{{images.image}}" alt="">
+</div>
+ -->
+<div id="menu6" class="tab-pane pictures menu6">
+<div class="slider pull-left">    
+  <div class="slider-content">
+    <div class="mySlides" *ngFor="let images of image_array; let i = index">
+      <img src="{{images.image}}"  (click)="openModal();currentSlideModal(i+1)" style="width:100%">
+    </div>
+<!-- 
+    <div class="mySlides">        
+      <img src="../../assets/car2.jpeg" (click)="openModal();currentSlideModal(2)" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../../assets/car3.jpg" (click)="openModal();currentSlideModal(3)"  style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="../../assets/car4.jpg" (click)="openModal();currentSlideModal(4)" style="width:100%">
+    </div> -->
+    
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+    
+
+    <!-- Thumbnail -->
+    <div class="column" *ngFor="let images of image_array; let i = index">
+      <img class="demo cursor" src="{{images.image}}" style="width:100%" (click)="currentSlide(i+1)" alt="car image">
+    </div>
+    <!-- <div class="column" >
+      <img class="demo cursor" src="../../assets/car2.jpeg" style="width:100%" (click)="currentSlide(2)" alt="car image">
+    </div>
+    <div class="column" >
+      <img class="demo cursor" src="../../assets/car3.jpg" style="width:100%" (click)="currentSlide(3)" alt="car image">
+    </div>
+    <div class="column" >
+      <img class="demo cursor" src="../../assets/car4.jpg" style="width:100%" (click)="currentSlide(4)" alt="car image">
+    </div> -->
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <p class="close cursor" (click)="closeModal()">&times;</p>
+  <div class="modal-content" *ngFor="let images of image_array; let i = index">
+
+    <div class="m_mySlides">
+      
+      <img src="{{images.image}}" style="width:100%">
+    </div>
+
+    <!-- <div class="m_mySlides">
+      
+      <img src="../../assets/car2.jpeg" style="width:100%">
+    </div>
+
+    <div class="m_mySlides">
+      
+      <img src="../../assets/car3.jpg" style="width:100%">
+    </div>
+    
+    <div class="m_mySlides">
+      
+      <img src="../../assets/car4.jpg" style="width:100%">
+    </div>   -->
+
+
+  </div>
+</div>
+</div>

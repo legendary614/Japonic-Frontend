@@ -1,0 +1,63 @@
+
+
+
+
+<nav class="navbar navbar-default">
+    <div class="container">  
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img id='logo' src="../../assets/aa.jpg" alt=""></a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a routerLink=''>Home </a></li>        
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Features</a></li>
+          <li><a href="javascript:void(0)">Pricing</a></li>
+        </ul>
+        <form class="navbar-form navbar-left search">
+          <div class="form-group">
+            <input type="text" class="form-control search_input" placeholder="Search" id='searchbtn_navbar'>
+          </div>
+          <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- user name if logged in -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" routerLink='/profilelanding' >{{username}}</a>
+            </li> 
+          <!-- user name if logged in -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="langIcon" href=""> <img id='langicon' src="../../assets/newtr.png" alt=""> TR</a>
+              </li>
+              <li>
+                <a class="langIcon" href=""> <img id='langicon' src="../../assets/newen.png" alt=""> EN</a>
+              </li>
+              <li>
+                <a class="langIcon" href=""><img id='langicon' src="../../assets/newde.jpg" alt=""> DE</a>
+              </li>
+              <li>
+                <a class="langIcon" href="">  <img id='langicon' src="../../assets/newja.png" alt=""> JA</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a routerLink='/login' *ngIf='!toggle' ><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <a (click)='logout()' *ngIf='toggle' ><span class="glyphicon glyphicon-log-out"></span> LOGOUT</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  

@@ -1,0 +1,20 @@
+
+
+/* invoice page */
+.border_panel{
+	border: 1px solid #ececec;
+}
+.border_panel .panel-heading{
+	font-weight: 600;
+	font-size: 20px;
+}
+.invoices .table td.actions i{
+	margin: 5px;
+}
+#menu7
+{
+    padding:30px;
+}
+th:not(.date):after{
+	display: none !important;
+}

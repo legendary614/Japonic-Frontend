@@ -1,0 +1,18 @@
+#items
+{
+    
+    margin:20px;
+    height:300px;
+    width:300px;
+}
+img
+{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height:auto;
+    width:auto;
+}
+b, strong {
+    font-weight: bold;
+    font-size: 29px;
+}

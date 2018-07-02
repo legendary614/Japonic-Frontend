@@ -1,0 +1,55 @@
+<div id="menu4" class="invoices">
+    <div class="col-sm-12  frame">
+            <ul class="chat">
+            	<li class="me" style="width:100%">			    
+            		<div class="msg_wrapper" *ngFor='let data1 of mychathistory'>
+				    	<div class="msj-rta macro" >
+						<div >					    
+					        <div class="text text-r" >
+					            <p >{{data1.question}}</p>					            
+					            
+							</div>
+						</div>
+					        <!-- <div class="avatar" style="padding:0px 0px 0px 10px !important" ><img class="img-circle" style="width:100%;" src="../../assets/images/car1.jpg" /></div> -->
+						</div>
+						<br>
+						<br>
+						<br>
+						<div class="msj macro" *ngIf="data1.answer" >
+					    	<!-- <div class="avatar"><img class="img-circle" style="width:100%;" src="../../assets/images/car1.jpg" /></div> -->
+					        <div class="text text-l" >
+					            <p> {{data1.answer}} </p> 			            
+					            
+					        </div>
+					    </div>
+					</div>
+					    <!-- <p class="name_date"><span class="name">kamal</span>,<span>12/10/18</span></p> -->
+				</li>
+				<!-- <li class="you" style="width:100%">
+					<div class="msg_wrapper">
+					    <div class="msj macro" >
+					    	 <div class="avatar"><img class="img-circle" style="width:100%;" src="../../assets/images/car1.jpg" /></div> -->
+					        <!-- <div class="text text-l" >
+					            <p> No Answer </p> 			            
+					            
+					        </div> -->
+					    <!-- </div>
+				    </div>
+				    <p class="name_date"><span class="name">kamal</span>,<span>12/10/18</span></p>
+					</li> --> 
+            </ul>
+            <div class="ask_question_main">
+				<form #msgref="ngForm"  id='msgform' (ngSubmit)='chat(msgref.value)'>
+                <div class="ask_question">                        
+                    <div class="question_text" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Ask a Question" name='msg' id='msg' ngModel>
+                    </div> 
+
+                </div>
+                <div class="send">
+                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-share-alt"></span>Send</button>
+				</div>  
+			</form>              
+            </div>
+        </div> 
+</div>

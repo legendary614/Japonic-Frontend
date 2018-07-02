@@ -1,0 +1,276 @@
+ul{
+	padding:0;
+}
+body{
+	background-color: rgba(245, 245, 245, 0.34);
+}
+.bg-blue{
+	background-color: #03a9f4;
+}
+.text_white{
+	color: #fff;
+}
+.text-blue{
+	color: #03a9f4;
+}
+
+.details .nav-tabs>li{
+	width: 135px;
+}
+.details .nav-tabs li.active > a{
+    border-top-color: #2196f3;
+    border-width: 2px;
+}
+.details .sidemenu button {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+}
+.details .sidemenu button:last-child{
+	margin-bottom: 0;
+}
+.details .sidemenu {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+    
+}
+.details .tab-pane .leftmenu .amazingslider-wrapper-1{
+	/* //padding: 20px; */
+	float: left;
+	/* //border: 1px solid #ccc; 
+    //background: #fff; */
+}
+.details .leftmenu h3{
+	margin-top: 0;
+}
+.details .tab-pane{
+	margin-top: 40px
+}
+.amazingslider-nav-1{
+	margin: 10px 0 !important;
+    position: static !important;
+    float: left;
+}
+.details_ul,.auction_sheet{
+	
+    margin-top: 10px;
+}
+
+.details_ul label.title span{
+	float: right;
+	padding-right: 5px;
+}
+.details_ul label{
+	width: 60%;
+	margin-bottom: 0px;
+	padding: 5px;
+    font-weight: normal;
+}
+.details_ul label.title{
+	width: 40%;
+}
+.details_ul ul li{
+	line-height: 35px;
+}
+.details_ul ul,.auction_sheet_img{
+	padding: 20px;
+	border: 1px solid #ccc;
+    background: #fff;
+}
+.details_ul ul li:nth-child(even){
+	background-color: #eee;
+}
+
+a[href='http://amazingslider.com']{ display: none !important }
+
+.details .sidemenu h4{
+    font-size: 18px;
+    background: #eee;
+    padding: 10px;
+    margin: 0px;
+}
+.details .sidemenu .sidemenu_text{
+	padding: 10px;
+}
+.share i{
+    float: left;
+    font-size: 25px;
+    width: 45px;
+}
+.share button{
+	text-align: left;
+	font-weight: bold;
+    line-height: 25px;
+}
+.fb{
+	background-color: #3b5997;
+	color: #fff;
+}
+.fb:hover{
+	background-color: #29498a;
+	color: #fff;
+}
+.insta{
+	background-color: #e13d60;
+	color: #fff;
+}
+.insta:hover{
+	background-color: #e41c46;
+	color: #fff;
+}
+
+.breadcrumb i.fa-arrow-circle-left{
+	font-size: 20px;
+}
+.breadcrumb{
+	padding: 8px 0px;
+	border: 0px;
+	background-color: transparent;
+}
+.auction_sheet img{
+	width: 100%;
+}
+.statistics p{
+    font-size: 18px;
+}
+.table>tbody>tr>td,.table>thead>tr>th{
+	line-height: 35px;
+}
+.table_border{
+	border: 1px solid #ccc;
+}
+ul.years li a{
+	color: #000;
+	font-size: 16px;
+}
+.search i{
+    background: #f16868;
+    border: 1px solid #f16868;
+    border-radius: 100%;
+    padding: 10px 12px;
+    /* height: 20px; */
+    color: #fff;
+    cursor: pointer;
+    color: white;
+}
+.delete i:hover{
+	background-color: #f74949;
+}
+.amazingslider-box-2{
+  margin-left: 0 !important;
+}
+i.fa.fa-download {
+    font-size: 25px;
+    color: #04a9f4;
+    cursor: pointer;
+}
+i.fa.fa-download:hover{
+	color: #1594ce;
+}
+i.fa-search{
+	font-size: 25px;
+	cursor: pointer;
+	color: #da524f;
+}
+i.fa-search:hover{
+	color: #d22c29;
+}
+/* customer dashboard*/
+
+.dashboard_item{
+	text-align: center;
+	margin: 70px 0;
+	text-align: center;
+     margin: 20px 0; 
+    /*margin-bottom: 20px;*/
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 30px;
+}
+.dashboard_item:hover{
+	border-color: #ccc;
+	cursor: pointer;
+}
+.dashboard_item:hover a{
+	color: #0099da;
+}
+.dashboard_item:hover a i{
+	transform: scale(1.1);
+}
+/*.dashboard_item a:hover{
+	color: #0099da;
+}
+.dashboard_item a:hover i{
+	transform: scale(1.1);
+}*/
+.dashboard_item h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #da524f;
+}
+.icon-object {
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    border-width: 5px;
+    border-style: solid;
+    padding: 20px 15px;
+    width: 140px;
+    display: inline-block;
+}
+.icon-object i {
+    font-size: 85px;
+    top: 0;
+}
+
+/* invoice page */
+.border_panel{
+	border: 1px solid #ececec;
+}
+.border_panel .panel-heading{
+	font-weight: 600;
+	font-size: 20px;
+}
+.invoices .table td.actions i{
+	margin: 5px;
+}
+#menu3
+{
+    padding:30px;
+}
+.jumbotron
+{
+    background: url("../../assets/bg.png");
+    background-color: #eee;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 0 15px 0px;
+}
+.box
+{
+    width:auto;
+    height:auto;
+  background-color:transparent;
+    padding:30px 0px;
+}
+.wrapper
+{
+    margin:0 auto;
+    display:block;
+    max-width: 1000px;
+}
+#jumbo_search
+{
+    width:80%;
+}
+@media only screen and (min-width: 768px) and (max-width: 888px){
+    .nav-tabs.nav-justified>li>a{
+      font-size: 13px;
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,279 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+	background-color: rgba(245, 245, 245, 0.64);
+	font-family: 'Open Sans', sans-serif;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+button.btn{
+	border-radius: 0px;
+}
+.breadcrumb_main{
+	margin-bottom: 10px;
+}
+.bg-blue{
+	background-color: #03a9f4;
+}
+.text_white{
+	color: #fff;
+}
+.text-blue{
+	color: #03a9f4;
+}
+.table>tbody>tr>td,.table>thead>tr>th{
+	line-height: 35px;
+}
+.table_border{
+	border: 1px solid #ccc;
+}
+.nav-tabs li.active > a{
+    border-top-color: #2196f3;
+    /* //border-width: 2px; */
+
+}
+.tab-pane{
+	margin-top: 40px
+}
+.tab-pane.inner{
+    background: #fff;
+    padding: 10px;
+}
+table{
+	border: 1px solid #eee;
+	margin: 0;
+}
+.table td.actions i{
+	margin: 5px;
+}
+.nav-tabs{
+	border-top: 1px solid #ddd;
+	
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	background-color: transparent;
+	border: 0;
+    border-bottom: 2px solid;
+}
+.nav-tabs>li a{
+	text-transform: uppercase;
+	padding: 10px 25px;
+	color: #03a9f4;
+	font-weight: 600;
+}
+.select_tabs{
+	border-radius: 0px;
+}
+/* download delete and search icon */
+td i{
+	cursor: pointer;
+}
+i.fa.fa-download {
+    font-size: 25px;
+    color: #555555;    
+}
+i.fa.fa-download:hover{
+	color: #0a0a0a;
+}
+i.fa-search{
+	font-size: 25px;	
+	color: #04a9f4;
+}
+i.fa-search:hover{
+	color: #007bb3;
+}
+i.fa.fa-times{
+    color: #da524f;
+    font-size: 25px;   
+}
+i.fa.fa-times:hover{
+	color: #d22c29;
+}
+/* pagination*/
+.page_navigation{
+	text-align: center;
+}
+.page_navigation ul li a{
+	color: #000;
+}
+
+
+.border_panel{
+	border: 1px solid #ececec;
+}
+.border_panel .panel-heading{
+	font-weight: 600;
+	font-size: 20px;
+}
+.mydp{
+    height: 34px;
+    top: 0px;
+    /* overflow: hidden; */
+}
+.mydp .selectiongroup{
+    border: 1px solid #ddd;
+}
+.mydp .selection,
+.mydp .selbtngroup{
+    height: 32px !important;
+}
+.mydp .selector{
+    top: 32px !important;
+}
+.mydp, .mydp .headertodaybtn, .mydp .selection, .mydp .selectiongroup, .mydp .selector{
+    border-radius: 0px !important;
+    float: left;
+}
+.statistics{
+    background: #fff;
+    padding: 10px;
+}
+ul.years li{
+  border-radius: 0px;
+  padding: 0;
+}
+ul.years li span{
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+}
+ul.years li.list-group-item span:hover {
+    background: #ddd;
+    text-decoration: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+   }
+/* responsive*/
+@media only screen and (max-width: 991px) {
+	.nav-tabs > li a{
+		padding: 10px 16px;
+	}
+}
+@media only screen and (max-width: 460px) {
+	ul.nav-tabs li{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.container{
+		width: 100%;
+	}
+}
+
+.msg_wrapper {
+    width: 100%;
+    float: left;
+}
+.mytext{
+    border:0;
+    padding:10px;
+    background:whitesmoke;
+    width: 100%;
+    height: 40px;
+}
+.text{
+    width:75%;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.text-l{
+    float:left;
+    padding-right:10px;
+}        
+.text-r{
+    float:right;
+    padding-left:10px;
+    text-align: right;
+}
+.avatar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:25%;
+    float:left;
+    padding-right:10px;
+}
+.macro{
+    margin:20px 20px 10px;
+    width:90%;
+    border-radius:5px;
+    padding:10px;
+    display:flex;
+}
+.msj-rta{
+    float:right;
+    background:#9d9d9d !important;
+    justify-content: flex-end; 
+    width: auto;
+}
+.avatar{
+	width: 20px;
+	height: 20px;
+}
+.msj{
+    float:left;
+    background:#ccc;
+    width: auto;
+
+}
+
+.frame > div:last-of-type{
+    position:absolute;bottom:0;width:100%;display:flex;
+}
+
+ul.chat {
+    width:100%;
+    list-style-type: none;
+    padding:18px;
+    position:absolute;
+    bottom:68px;
+    display:flex;
+    flex-direction: column;
+    top:0;
+    overflow-y:auto;
+}
+.msj:before{
+    width: 0;
+    height: 0;
+    content:"";
+    top:-5px;
+    left:-23px;
+    position:relative;
+    border-style: solid;
+    border-width: 0 13px 13px 0;
+    border-color: transparent #ccc transparent transparent;            
+}
+.msj-rta:after{
+    width: 0;
+    height: 0;
+    content:"";
+    top:-5px;
+    right:-23px;
+    position:relative;
+    border-style: solid;
+    border-width: 13px 13px 0 0;
+    border-color: #9d9d9d transparent transparent transparent;           
+}  
+input:focus{
+    outline: none;
+}        
+  
+.slider{
+	width: 100%;
+}

@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="login-form">
+    <form ngNativeValidate #loginform="ngForm" (ngSubmit)="logging(loginform.value)">
+         
+        <h2 class="text-center">Login</h2>   
+        <div class='form-group'>
+            <input type="email" placeholder='Your e-mail' name='email' id='email' class=form-control pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required ngModel name="email" #email="ngModel" >
+              <div class='alert alert-danger' *ngIf="email.touched && !email.valid">
+                  <div *ngIf=email.errors.required> *Your Email is Required</div>
+                  <div *ngIf=email.errors.pattern> *Your Email is invalid</div>
+              </div>
+          </div>
+          <div class="form-group" id='passwordfield'>
+              <input type='password' placeholder='Your Password' required ngModel name="password" #passwordref="ngModel"  id='password' class="form-control">
+                    <div class="alert alert-danger" *ngIf="passwordref.touched && !passwordref.valid">
+                        <div *ngIf="passwordref.errors.required">*Please Enter Your Password </div>
+                </div>
+            </div>
+              <ngx-spinner
+              bdColor = ""
+              size = "default"
+              color = "#000000"
+              type = "cube-transition"
+              ></ngx-spinner>
+          <button type='submit' class="btn btn-danger center-block" [disabled]=!loginform.form.valid>Login
+                   
+          </button>
+         
+          
+          <br>
+            <div class="login text-center">
+                Don't have an account?	<a href="" routerLink='/signup'>Click here.</a> 
+              </div>
+    </form>
+    <button class="btn googlebtn" id='googlebtn' (click)="googleloginfunction()" [disabled]='isLogged'><i class="fa fa-google"></i>{{googlebuttontext}}</button>
+
+</div>

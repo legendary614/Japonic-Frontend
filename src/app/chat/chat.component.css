@@ -1,0 +1,50 @@
+.frame{
+    background:#fafafa;
+    height:500px;
+    overflow:hidden;
+    padding:0;
+    margin: 20px 0;
+    border: 1px solid#ccc;
+}
+.ask_question{
+    display: block;    
+    float: left;
+    margin: 10px;
+    width: calc(100% - 100px);
+}
+.question_text{
+    width: 100%;
+    text-align: left;
+}
+.send{
+    width: 100px;
+    float: left;
+    margin: 10px;
+}
+.send button{
+    width: 100%;
+    height: 40px;
+}
+.you p.name_date{
+    
+    float: left;    
+    margin-left: 20px;    
+    text-align: left;
+
+}
+.me p.name_date{
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+.text {
+    width: 100%;
+}
+.text p{
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+}
+.text-l p{
+    color: #000;
+}

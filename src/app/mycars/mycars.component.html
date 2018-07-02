@@ -1,0 +1,59 @@
+
+<app-navbar></app-navbar>
+<app-search></app-search>
+<div class="wrapper">
+<ul class="nav nav-tabs nav-justified">
+   
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/mycars" role="tab" >My cars</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"  role="tab" >Offered</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"  role="tab" >Lost</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"  role="tab" >*Favorites</a>
+    </li>
+    
+</ul>
+<div id="menu3" class="offers">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 ol-lg-12">
+          <div class="table-responsive">
+         <table class="table table-striped table_border">
+        <thead class="bg-blue text_white">
+          <tr>
+            <th>#</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Mileage KM</th>
+            <th>Rate</th>
+            <th>Offer</th>
+            <th>See details</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mycar of mycar_details" > 
+            <td>{{mycar.id}}</td> 
+            <td>{{mycar.make}}</td> 
+            <td>{{mycar.model}}</td> 
+            <td>{{mycar.year}} </td>
+            <td>{{mycar.mileage}}</td>
+            <td>{{mycar.rate}}</td>
+            <td>{{mycar.offeramountinyen}}</td> 
+            <td class="search"><i class="fa fa-search" (click)='searchitem()' aria-hidden="true"></i></td>
+
+          </tr>
+          
+        </tbody>
+    </table>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>

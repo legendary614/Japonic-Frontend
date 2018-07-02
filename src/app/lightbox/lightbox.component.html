@@ -1,0 +1,40 @@
+<div class="slider">
+    
+    <div class="slider-content">
+
+      <div class="mySlides" style="display:block">
+        <img src="../../assets/car1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">        
+        <img src="../../assets/car2.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../../assets/car3.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <img src="../../assets/car4.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+      <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+      
+
+
+      <div class="column">
+        <img class="demo cursor" src="../../assets/car1.jpg" style="width:100%" (click)="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../../assets/car2.jpeg" style="width:100%" (click)="currentSlide(2)" alt="Snow">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../../assets/car3.jpg" style="width:100%" (click)="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../../assets/car4.jpg" style="width:100%" (click)="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>

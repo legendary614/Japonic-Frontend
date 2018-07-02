@@ -1,0 +1,88 @@
+<app-navbar></app-navbar>
+<div class="signup-form">
+    <form ngNativeValidate name='signupform' id='sign' name='sign' #signupform='ngForm' (ngSubmit)='signup(signupform.value)' >
+        <div class="form-group">
+            <h2 id='signupheader' class='text-center'>Signup</h2>
+            <div class='form-group'>
+                    <input type="text" placeholder='Your name*' name='name' id='name' class=form-control required ngModel name="name" #name="ngModel" >
+                      <div class='alert alert-danger' *ngIf="name.touched && !name.valid">
+                        <div *ngIf=name.errors.required> *Your name is Required</div>
+                      </div>
+            </div>
+
+            <div class='form-group'>
+                    <select required class='form-control' name='country' id='country' (change)="getcode()"   ngModel>
+                        <option value="" selected disabled hidden>Choose Country*</option>
+                        <option *ngFor="let country of country" [value]="country.countrycode" >{{country.name}}</option>
+                    </select>
+            </div>
+            <div class='form-group'>
+                    <input type="text" placeholder='Your master country' name='masterCountry' id='masterCountry' class=form-control ngModel name="masterCountry" #masterCountry="ngModel" >
+            </div>
+
+            <div class='form-group'>
+                    <select [required]="requirefield" class='form-control' name='regionCode' id='regionCode'  ngModel>
+                        <option value="" selected disabled hidden>Choose Region*</option>
+                        <option *ngFor="let region of regions" [value]="region.regioncode">{{region.name}}</option>
+                    </select>
+                      <div class='alert alert-danger' *ngIf="region.touched && !region.valid">
+                        <div *ngIf=region.errors.required> *Your region is Required</div>
+                      </div>
+            </div>
+
+            <div class='form-group'>
+                    <select required class='form-control' name='language' id='language' ngModel>
+                        <option value="" selected disabled hidden>Choose language*</option>
+                        <option value="english">English</option>
+                    </select>
+            </div>
+
+            <div class='form-group'>
+                    <input type="text" placeholder='Your address*' name='address' id='address' class=form-control required ngModel name="address" #address="ngModel" >
+                      <div class='alert alert-danger' *ngIf="address.touched && !address.valid">
+                        <div *ngIf=address.errors.required> *Your address is Required</div>
+                      </div>
+            </div>
+            
+            <div class='form-group'>
+                    <input type="text" placeholder='Your city*' name='city' id='city' class=form-control required ngModel name="city" #city="ngModel" >
+                      <div class='alert alert-danger' *ngIf="city.touched && !city.valid">
+                        <div *ngIf=city.errors.required> *Your city is Required</div>
+                      </div>
+            </div>
+
+            <div class='form-group'>
+                <input type="email" placeholder='Your e-mail*' name='email' id='email' class=form-control pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required ngModel name="email" #email="ngModel" >
+                  <div class='alert alert-danger' *ngIf="email.touched && !email.valid">
+                    <div *ngIf=email.errors.required> *Your Email is Required</div>
+                    <div *ngIf=email.errors.pattern> *Your Email is invalid</div>
+                  </div>
+            </div>
+              <div class="form-group" id='passwordfield'>
+                  <input type='password' placeholder='Your Password*' required ngModel name="password" #passwordref="ngModel"  id='password' class="form-control">
+                        <div class="alert alert-danger" *ngIf="passwordref.touched && !passwordref.valid">
+                        <div *ngIf="passwordref.errors.required">*Please Enter Your Password </div>
+                    </div>
+              </div>
+              <div class="form-group" id='passwordfield'>
+                    <input type='password' placeholder='Confirm Password*' required ngModel name="password2" #Password2="ngModel"  id='Password2' class="form-control">
+                          <div class="alert alert-danger" *ngIf="Password2.touched && !Password2.valid">
+                          <div *ngIf="Password2.errors.required">*Please re-enter your Password </div>
+                      </div>
+                </div>
+            <input type="hidden" name="role" id='role' value='user' ngModel="user">
+            <button type='submit' class='btn btn-primary' id='submitbtn' [disabled]="!signupform.form.valid">Signup
+                <ngx-spinner
+                bdColor = ""
+                size = "default"
+                color = "#000000"
+                type = "cube-transition"
+                ></ngx-spinner>  
+            </button>
+          </div>
+          <div class="login text-center">
+            Already Registered?	<a href="" routerLink='/login'>Click here.</a> 
+          </div>
+     </form>
+  
+</div>

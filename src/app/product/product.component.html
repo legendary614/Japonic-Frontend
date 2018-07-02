@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<app-search></app-search>
+
+  
+
+ <!-- Nav tabs -->
+
+<div class="dynamic">
+    <div class="container homepage">
+        <div class="ul_tabs">
+        <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item active">
+        <a class="nav-link"  routerLink="lot_details/" role="tab" (click)='geturl()'>Lot Details</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="stats/" role="tab" (click)='geturl()'>Statistics</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="offers/" role="tab" *ngIf='logcheck' (click)='geturl()'>Offers</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="chat/" role="tab" *ngIf='logcheck' (click)='geturl()'>Chat</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="invoices/" role="tab" *ngIf='logcheck' (click)='geturl()'>*Invoices</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="pictures/" role="tab" *ngIf='logcheck' (click)='geturl()'>*Pictures</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="state/" role="tab" *ngIf='logcheck' (click)='geturl()'>*State</a>
+    </li>
+</ul>
+</div>
+  <router-outlet></router-outlet>
+</div>
+</div>
+

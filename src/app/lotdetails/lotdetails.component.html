@@ -1,0 +1,472 @@
+
+
+    
+  <div class="row ">
+      <div class="col-md-12  details">
+          
+          <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+              <div class="row">
+                <div class="col-sm-8 col-md-9 col-lg-9">
+                  <div class="row">
+                    <div class="leftmenu col-md-12">
+                      <div class="product_caption pull-left">
+                          <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+                        </div>
+                         
+                        <div class="reviews pull-right" style="display:none">
+                          <ul>
+                            <li>
+                              <label class="review_star star5">
+                                <i class="fa fa-star starfilled" aria-hidden="true"></i>
+                                <i class="fa fa-star starfilled" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </label>                           
+                            </li>
+                            <li><i class="fa fa-eye" aria-hidden="true"></i>31 x qezien</li>
+                            <li><i class="fa fa-star-o" aria-hidden="true"></i>0 X bewaard</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> since 9 jun,2128</li>
+                          </ul>
+                        </div> 
+                      <div class="slider pull-left">
+      
+                        <div class="slider-content">
+  
+                          <div class="mySlides" *ngFor="let images of imageArray;let i = index">
+                            <img src={{images}} style="width:100%;">
+                          </div>
+  
+                          <!-- <div class="mySlides">        
+                            <img src="../../assets/car2.jpeg" style="width:100%">
+                          </div>
+  
+                          <div class="mySlides">
+                            <img src="../../assets/car3.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="mySlides">
+                            <img src="../../assets/car4.jpg" style="width:100%">
+                          </div> -->
+                          
+                          <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+                          <a class="next" (click)="plusSlides(1)">&#10095;</a>
+  
+                          
+  
+                          <!-- Thumbnail -->
+                          <div class="column" *ngFor="let images of imageArray;let i = index">
+                            <img class="demo cursor " src="{{images}}" style="width:100%" (click)="currentSlide(i)" alt="car image">
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="details_ul col-md-12 ">
+                      <ul type='none'>
+           <div class="row">
+             <div class="col-md-6">
+                <li><label class="title">Brand<span>:</span></label><label>{{data?.MARKA_NAME}}</label></li>
+                <li><label class="title">Model<span>:</span></label><label>{{data?.MODEL_NAME}}</label></li>
+                <li><label class="title">Type<span>:</span></label><label>{{data?.KUZOV}}</label></li>
+                <li><label class="title">Year<span>:</span></label><label>{{data?.MARKA_NAME}}</label></li>
+             </div>
+              <div class="col-md-6">
+                <li><label class="title">CC<span>:</span></label><label>{{data?.ENG_V}}</label></li>
+                <li><label class="title">KM<span>:</span></label><label>{{data?.MILEAGE}}</label></li>
+                <li><label class="title">Gear<span>:</span></label><label>{{data?.MILEAGE}}</label></li>
+                <li><label class="title">Color<span>:</span></label><label>{{data?.COLOR}}</label></li>
+                <li><label class="title">Cooling<span>:</span></label><label>{{data?.EQUIP}}</label></li>
+              </div>
+             </div>
+                        
+                      </ul>
+                    </div>
+                    <div class="auction_sheet col-md-12">                      
+                      <div class="auction_sheet_img">
+                        <h3>Auction Sheet</h3>
+                        <img src={{auction_image}}/>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+               <div class="col-sm-4 col-md-3 col-lg-3" >
+                  <div class="sidemenu">
+                    <h4>Auction</h4> 
+                    <div class="sidemenu_text">                   
+                      <button type="button" class="btn btn-success">{{data?.RATE}}</button>
+                      <button type="button" class="btn btn-danger">{{data?.LOT}}</button>
+                      <button type="button" class="btn btn-primary">{{data?.AUCTION_DATE}}</button>
+                    </div>  
+                  </div>
+                  <div class="sidemenu">
+                      <h4>Price Statistics</h4>
+                      <div class="sidemenu_text">                    
+                      <ul>
+                        <li><label>AVG:&nbsp;</label>{{data?.AVG_PRICE}}</li>
+                        <li><label>Last:&nbsp;</label>{{lastPrices}}</li>
+                      </ul>
+                      </div>
+                  </div>
+                  <div class="sidemenu">
+                      <h4>Offer</h4>
+                      <div class="sidemenu_text text-center">  
+                          <form #offerref='ngForm' name='offer_form' id='offer_form' (ngSubmit)="offermade(offerref.value)">  
+                          <i class="fa fa-cny" style="font-size:20px"></i> <input id='offerfield' ngModel type="text" style="width:55px; border-bottom-color: black; border-left-color: transparent; border-right-color: transparent;border-top-color: transparent;" name="offer"> <b>,000</b>     
+                          
+                          <div class="action place_offer">
+                            <button type="submit" class="btn btn-success">Place offer</button>
+                          </div>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="sidemenu">
+                      <h4>Chat</h4> 
+                      <div class="sidemenu_text">  
+                      <div class="action">                 
+                        <button type="button" class="btn btn-danger" routerLink="mychat/" >Ask Question</button>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="sidemenu">
+                      <h4>Share</h4> 
+                      <div class="sidemenu_text share">                   
+                      <!-- <button type="button" class="btn btn-danger"><i class="fa fa-envelope" aria-hidden="true"></i>Share via E-mail</button> -->
+                       <div class="action">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope" aria-hidden="true"></i>Share Via Email</button>
+                        </div>
+                        <div class="action">
+                            <a class='btn btn-primary fb' target="_blank" [attr.href]="fbshare" class="fb-xfbml-parse-ignore"> 
+                            <button type="button" class="btn fb"><i class="fa fa-facebook" aria-hidden="true"></i>Share to Facebook</button></a>
+                        </div>
+                        
+                      <!-- <button type="button" class="btn insta"><i class="fa fa-instagram" aria-hidden="true"></i>Share  on Instagram</button> -->
+                      
+  
+  
+  
+                      </div>
+                  </div>                 
+                </div>
+              </div>
+            </div>            
+            <div id="menu2" class="tab-pane fade statistics">
+              <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                   <ul class="list-group years">
+                      <li class="list-group-item"><a href="#">2014</a></li>
+                      <li class="list-group-item"><a href="#">2013</a></li>
+                      <li class="list-group-item"><a href="#">2012</a></li>
+                      <li class="list-group-item"><a href="#">2011</a></li>                          
+                      <li class="list-group-item"><a href="#">2010</a></li>
+                      <li class="list-group-item"><a href="#">2009</a></li>
+                      <li class="list-group-item"><a href="#">2008</a></li>
+                      <li class="list-group-item"><a href="#">2008</a></li>
+                      <li class="list-group-item"><a href="#">2007</a></li>
+                      <li class="list-group-item"><a href="#">2006</a></li>
+                      <li class="list-group-item"><a href="#">2005</a></li>
+                      <li class="list-group-item"><a href="#">2004</a></li>
+                      <li class="list-group-item"><a href="#">2003</a></li>
+                      <li class="list-group-item"><a href="#">2002</a></li>
+                      <li class="list-group-item"><a href="#">2001</a></li>
+                      <li class="list-group-item"><a href="#">2000</a></li>                                                  
+                    </ul>
+                </div>
+                <div class="col-sm-10 col-md-10 ol-lg-10">
+                  <p>The Average price of car sales in Japan, depending on the year, evaluation, mileage and the body.</p>
+                  <div class="table-responsive">
+                   <table class="table table-striped">
+                  <thead class="bg-blue text_white">
+                    <tr>
+                      <th>Condition</th>
+                      <th>0-25 KM</th>
+                      <th>25-50 KM</th>
+                      <th>50-75 KM</th>
+                      <th>75-100 KM</th>
+                      <th>100-125 KM</th>
+                      <th>100-125 KM</th>
+                      <th>Average Price</th>
+  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>5</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+  
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                      <td>$343058</td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+                </div>
+              </div>
+             
+            </div>
+            <div id="menu3" class="tab-pane fade offers">
+              <div class="row">
+                <div class="col-sm-12 col-md-12 ol-lg-12">
+                  <div class="table-responsive">
+                   <table class="table table-striped table_border">
+                  <thead class="bg-blue text_white">
+                    <tr>
+                      <th>#</th>
+                      <th>Make</th>
+                      <th>Model</th>
+                      <th>Year</th>
+                      <th>Mileage KM</th>
+                      <th>Rate</th>
+                      <th>Offer Date</th>
+                      <th>Offer</th>
+                      <th>State</th>
+                      <th>Delete</th>
+  
+  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Honda</td>
+                      <td>Accord </td>
+                      <td>2009</td>
+                      <td>10.000</td>
+                      <td>4.5</td>
+                      <td>2018-06-08</td>
+                      <td>$343058</td>
+                      <td>Submitted</td>
+                      <td class="delete"><i class="fa fa-times" aria-hidden="true"></i></td>
+  
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Toyota</td>
+                      <td>Camry </td>
+                      <td>2012</td>
+                      <td>10.000</td>
+                      <td>4.5</td>
+                      <td>2018-06-08</td>
+                      <td>$343058</td>
+                      <td>Cancelled By User</td>
+                      <td class="delete"><i class="fa fa-times" aria-hidden="true"></i></td>
+  
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu4" class="tab-pane fade invoices">
+              <h3>Menu 4</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+              <div class="row">
+                <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-6 col-md-6 col-lg-6">
+                  <div class="table-responsive">
+                  <table class="table table-striped table_border">
+                  <thead class="bg-blue text_white">
+                    <tr>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Download</th>
+  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2018-17-06</td>
+                      <td>Invoice.pdf</td>
+                      <td class="download"><i class="fa fa-download" aria-hidden="true"></i></td>
+  
+                    </tr>
+                    <tr>
+                      <td>2018-17-06</td>
+                      <td>Invoice.pdf</td>
+                      <td class="download"><i class="fa fa-download" aria-hidden="true"></i></td>
+  
+                    </tr>
+                    <tr>
+                      <td>2018-17-06</td>
+                      <td>Invoice.pdf</td>
+                      <td class="download"><i class="fa fa-download" aria-hidden="true"></i></td>
+  
+                    </tr>
+                    <tr>
+                      <td>2018-17-06</td>
+                      <td>Invoice.pdf</td>
+                      <td class="download"><i class="fa fa-download" aria-hidden="true"></i></td>
+  
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu6" class="tab-pane fade pictures">
+              
+            </div>
+            <div id="menu7" class="tab-pane fade state">
+              <div class="row">
+                <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-6 col-md-6 col-lg-6">
+                  <div class="table-responsive">
+                  <table class="table table-striped table_border">
+                  <thead class="bg-blue text_white">
+                    <tr>
+                      <th>#</th>
+                      <th>Make</th>
+                      
+  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Honda</td>
+                      
+  
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Toyota</td>
+                      
+  
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+      </div>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Share Via Email</h4>
+        </div>
+        <div class="modal-body">
+            <ngx-spinner
+            bdColor = "rgba(51, 51, 51, 0.8)"
+            size = "medium"
+            color = "#fff"
+            type = "ball-clip-rotate-multiple"
+            ></ngx-spinner>
+          <form #sendref='ngForm' (ngSubmit)="sendemail(sendref.value)">
+            <input type="hidden" [(ngModel)]="thisurl" name='link' id='link' class="text">
+            <!-- <input class='form-control' type="text" name='name' id='modalinput' placeholder="Your Name" ngModel > -->
+            <div class='form-group'>
+              <input type="email" placeholder='Your e-mail' name='email' id='modalinput' class=form-control pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required ngModel name="email" #email="ngModel" >
+                <div class='alert alert-danger' *ngIf="email.touched && !email.valid">
+                    <div *ngIf=email.errors.required> *Your Email is Required</div>
+                    <div *ngIf=email.errors.pattern> *Your Email is invalid</div>
+                </div>
+            </div>
+            <textarea  class='form-control' name="message" id="modalinput" placeholder="Any Message? (optional)" cols="30" rows="3" ngModel></textarea>
+            <button class="submit center-block btn btn-primary" id='modalbutton' type='submit' [disabled]=!sendref.form.valid >Send Email</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="countrymodal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Update Details</h4>
+          </div>
+          <div class="modal-body">
+              <ngx-spinner
+              bdColor = "rgba(51, 51, 51, 0.8)"
+              size = "medium"
+              color = "#fff"
+              type = "ball-clip-rotate-multiple"
+              ></ngx-spinner>
+            <form #countryref='ngForm' (ngSubmit)="addcountry(countryref.value)">
+              <div class='form-group'>
+                <select required class='form-control' name='country' id='country'  ngModel>
+                    <option value="" selected disabled hidden>Choose Country*</option>
+                    <option *ngFor="let country of country" [value]="country.countrycode">{{country.name}}</option>
+                </select>
+               </div>
+               <button class="submit center-block btn btn-primary" id='modalbutton' type='submit' [disabled]=!countryref.form.valid >Update</button>
+    
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+

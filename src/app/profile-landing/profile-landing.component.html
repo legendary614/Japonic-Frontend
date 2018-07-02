@@ -1,0 +1,106 @@
+<app-navbar></app-navbar>
+<app-search></app-search>
+<div class="container-fluid">
+  <div class="row" id='row1'>
+    <div class="col-md-2">
+      
+    </div>
+    <div class="col-md-3" id='items'>
+        <a routerLink='/mycars'><img src="../../assets/images/cartag.png" alt=""></a>
+          <div class="text-center">
+              <strong>My Cars</strong>
+          </div>
+      </div>
+    <div class="col-md-3" id='items'>
+        <a href="javascript:void(0)"> <img src="../../assets/images/star.png" alt=""></a>
+        <div class="text-center">
+        <strong>My Favorites</strong>
+      </div>
+      </div>
+    <div class="col-md-3" id='items'>
+        <a href="javascript:void(0)"> <img src="../../assets/images/coin.png" alt=""></a>
+        <div class="text-center">
+        <strong> My Offers</strong>
+      </div>
+      </div>
+    <div class="col-md-1">
+        
+      </div>
+  </div>
+
+  <div class="row" id='row2'>
+      <div class="col-md-2">
+        
+      </div>
+      <div class="col-md-3 " id='items'>
+          <a href="product/invoices">  <img src="../../assets/images/invoices.png" alt=""></a>
+          <div class="text-center">
+          <strong> My Invoices</strong>
+        </div>
+        </div>
+      <div class="col-md-3" id='items'>
+          <a href="product/chat">  <img src="../../assets/images/chat.png" alt=""></a>
+          <div class="text-center">
+          <strong>Chat</strong>
+        </div>
+        </div>
+      <div class="col-md-3" id='items'>
+          <a href="javascript:void(0)">  <img src="../../assets/images/user.png" alt=""></a>
+          <div class="text-center">
+          <strong> My Profile</strong>
+        </div>
+        </div>
+      <div class="col-md-1">
+         
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Update Details</h4>
+      </div>
+      <div class="modal-body">
+          <ngx-spinner
+          bdColor = "rgba(51, 51, 51, 0.8)"
+          size = "medium"
+          color = "#fff"
+          type = "ball-clip-rotate-multiple"
+          ></ngx-spinner>
+        <form #countryref='ngForm' (ngSubmit)="addcountry(countryref.value)">
+
+
+          <div class='form-group'>
+            <select required class='form-control' name='country' id='country' (change)="getcode()"   ngModel>
+                <option value="" selected disabled hidden>Choose Country*</option>
+                <option *ngFor="let country of country" [value]="country.countrycode" >{{country.name}}</option>
+            </select>
+           </div>
+
+
+
+           <div class='form-group'>
+              <select [required]="requirefield" class='form-control' name='regionCode' id='regionCode'  ngModel>
+                  <option value="" selected disabled hidden>Choose Region*</option>
+                  <option *ngFor="let region of regions" [value]="region.regioncode">{{region.name}}</option>
+              </select>
+                <div class='alert alert-danger' *ngIf="region.touched && !region.valid">
+                  <div *ngIf=region.errors.required> *Your region is Required</div>
+                </div>
+            </div>
+
+
+           <button class="submit center-block btn btn-primary" id='modalbutton' type='submit' [disabled]=!countryref.form.valid >Update</button>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

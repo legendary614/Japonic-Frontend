@@ -1,0 +1,41 @@
+.nav-item.active a{
+    border-radius: 0px;
+    background-color: #fff;
+    border: 0px;
+    border-bottom: 2px solid #000;
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.nav-tabs>li a{
+		padding: 10px 20px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 888px){
+  .nav-tabs.nav-justified>li>a{
+    font-size: 13px;
+    padding: 10px;
+
+  }
+}
+@media screen and (max-width: 767px){
+	.ul_tabs{
+		overflow-x:auto;
+		margin-bottom: 10px;
+	}
+	.ul_tabs ul{
+		width: 721px;
+		border-bottom: 1px solid #ddd !important;
+	    margin-bottom: 10px;
+
+	}
+	.nav-tabs.nav-justified>li{
+		float: left;
+	}
+	.nav-tabs > li a{
+		padding: 20px 16px;
+		margin-bottom: 0;
+	}
+	ul.nav-tabs li{
+		width: auto;
+	}
+}

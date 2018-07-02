@@ -1,0 +1,44 @@
+<div id="menu3" class="offers">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 ol-lg-12">
+          <div class="table-responsive">
+         <table class="table table-striped table_border">
+        <thead class="bg-blue text_white">
+          <tr>
+            <th>#</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Mutation</th>
+            <th>Year</th>
+            <th>Mileage KM</th>
+            <th>Rate</th>
+            <th class='date'>Offer Date</th>
+            <th>Offer</th>
+            <th>State</th>
+            <th>Delete</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let myoffer of myoffers">
+            <td>{{myoffer.id}}</td> 
+            <td>{{myoffer.make}}</td> 
+            <td>{{myoffer.model}}</td> 
+            <td>{{myoffer.mutation}}</td>
+            <td>{{myoffer.year}} </td>
+            <td>{{myoffer.mileage}}</td>
+            <td>{{myoffer.rate}}</td>
+            <td>{{myoffer.createdate}}</td>
+            <td>{{myoffer.offeramountinyen}}</td>
+            <td>{{myoffer.offerstate}}</td>
+            <td class="delete"><i class="fa fa-times" (click)='delete(myoffer.id)' aria-hidden="true"></i></td>
+
+          </tr>
+          
+        </tbody>
+    </table>
+  </div>
+      </div>
+    </div>
+  </div>

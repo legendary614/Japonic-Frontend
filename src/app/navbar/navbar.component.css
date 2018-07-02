@@ -1,0 +1,151 @@
+/*.loginbtn
+{
+    width:250px;
+}
+.navbar
+{
+    background-color:white;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.navbar-brand
+{
+    margin:0px;
+    padding: 0px;
+    
+}
+#logo
+{
+    height:100%;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+     background-color: lightslategrey; 
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: black;
+}
+#loginbtn_navbar
+{
+    margin-top:8px;
+    width:150px;
+}
+#searchbtn_navbar
+{
+    margin-top:14px;
+    width:150px;
+    border:0px;
+}
+ul li
+{
+    padding-left: 15px;
+}
+#langicon
+{
+    width:20px;
+}
+.navbar-right
+{
+    margin-top:14px;
+   
+}
+.navbar-right li
+{
+    padding-left: 10px;
+
+}
+.fa-search
+{
+    margin-right: 12px;
+}
+.container-fluid
+{
+    max-width: 90%;
+}
+ul a
+{
+    padding-left: 12px;
+}
+.dropdown-toggle
+{
+    background-color: white;
+    padding:0px 40px 0px 10px;
+
+}
+
+.dropdown-toggle:hover{
+    background-color: transparent;
+}
+
+.nav .open a, .nav .open a:focus, .nav .open a:hover {
+    background-color: transparent; 
+   
+}
+a{
+    cursor:pointer;
+}*/
+.navbar-brand{
+    padding: 7px 15px;
+    height: 60px;
+}
+.navbar-brand>img{
+    height: 100%
+}
+.nav.navbar-nav>li>a{
+    height: 60px;
+    line-height: 30px;
+}
+.navbar-default{
+    background-color: #ffffff;
+}
+.langIcon img{
+    width: 20px;
+}
+.search_input{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+.search{
+    margin-bottom: 0px;
+}
+.search button{
+    border: 0;
+}
+.search button:hover{
+    background-color: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 967px){
+    .navbar-header{
+        float: none;
+        text-align: center;
+    }
+    .navbar-brand{
+        float: left;
+        margin: 0 !important;
+        width: 100%;
+    }
+    .navbar-brand img{
+        margin: 0 auto;
+    }
+    .collapse.navbar-collapse{
+        padding: 0;
+    }
+    .nav>li>a{
+        padding: 10px 12px;
+    }
+}

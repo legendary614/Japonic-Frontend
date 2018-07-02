@@ -1,0 +1,488 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul li{
+list-style: none;
+}
+.box
+{
+    width:auto;
+    height:auto;
+  background-color:transparent;
+    padding:30px 0px;
+}
+.wrapper
+{
+    margin:0 auto;
+    display:block;
+    max-width: 1000px;
+}
+.left
+{
+    background-color: transparent;
+    padding-right: 0;
+}
+.right
+{
+    background-color: transparent;
+    padding-left: 0;
+}
+
+.last{
+    padding-left: 0;
+    text-align: left;
+}
+#btn_row1
+{
+    width: 100%;
+}
+#btn_row21
+{
+    margin: 4px;
+}
+#btn_row22
+{
+    margin: 4px;
+}
+#btn_row23
+{
+    margin: 4px;
+}
+#btn_row24
+{
+    margin: 4px;
+}
+#jumbo_search
+{
+   
+}
+.jumbotron
+{
+    background: url("../../assets/bg.png");
+    background-color: #eee;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 0 15px 0px;
+}
+.sidemenu
+{
+    /* //background-color: lightcoral; */
+    border-radius:3px;
+}
+.centermenu
+{
+    background-color: #fff;
+}
+
+.items
+{
+    background-color: lightyellow;
+    margin-top:5%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 10%;
+
+}
+.whyus_text
+{
+    font-size: 25px;
+    color:white;
+    padding-left:10%;
+    padding-top:5%;
+}
+#inlinelogo
+{    display: inline-block;
+    width: 40px;
+    vertical-align: TOP;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}
+#inlinetext
+{
+    display: inline-block;
+    width:78%;
+   
+}
+#seideicons
+{
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+.items i
+{
+    color:red;
+    font-style: normal;
+}
+.item_a
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#mainc
+{
+    background-color: white;
+    padding: 80px;
+}
+.searchbymake_text
+{
+    font-size: 20px;
+    
+    border-bottom: 2px solid #337ab7;
+    
+}
+.searchbymake{
+    background: #eee;
+    margin-top: 45px;
+    padding: 20px;
+}
+.searchbymake ul{
+    padding: 0;
+}
+.searchbymake ul li{
+    list-style: none;
+    line-height: 35px;
+    cursor: pointer;
+}
+.searchbymake ul li:hover {
+    background: #fff;
+}
+.searchbymake ul li:hover > ul{
+    display: block;
+}
+.search_list{
+    padding-top: 10px;
+}
+.search_list img {
+    width: 25px;
+    margin-right: 5px;
+}
+.img.col-sm-4.col-md-4 {
+    padding: 5px;
+}
+.img.col-sm-4.col-md-4 img {
+    width: 100%;
+}
+.centermenu .title{
+   font-weight: bold;
+}
+.start_price span.helptext{
+    width: 100%;
+    display: block;
+    color:#9d9d9d;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.year_mileage,.description{
+    margin-top: 10px;
+}
+.year_mileage label:first-child{
+    margin-right: 15px;
+}
+.start_price{
+    padding: 5px 0;
+}
+.auction label{
+    width: 100%
+}
+.auction_price{
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+    color: #04a9f4
+}
+.auction label.auction_date{
+    color: #9d9d9d;
+    font-weight: 100;
+}
+.car_details {
+    /* //border-bottom: 2px solid #ccc; */
+}
+li.dropdown{
+    position: relative;
+}
+
+.ul_dropdown{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    left: 100%;
+    z-index: 999;
+    border: 1px solid #ccc;
+    padding: 10px 20px !important;
+    top: 0px;
+}
+.ul_dropdown li{
+    position: relative;;
+}
+.ul_dropdown li:hover{
+    color: #337ab7;
+}
+.ul_dropdown li:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+}
+.drop:after{
+    content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+ul.list-group.search_list{
+    padding-top: 0;
+}
+ul.list-group.search_list li{
+    padding: 0;
+}
+ul.list-group.search_list li a{
+    padding: 10px 15px;
+}
+ul.list-group.search_list li a:hover {
+    color: #18a8ef;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul.list-group.search_list li a:active {
+    background: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul.list-group.search_list li a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+ul.list-group.search_list .dropdown_ul{
+    margin: 0;
+}
+ul.list-group.search_list .dropdown_ul li a:hover{
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul.list-group.search_list .dropdown_ul {
+    padding-left: 30px;
+}
+.why_us_panel{
+    /* //background: url(../../assets/bg.png); */
+    background-color: #03a9f4;
+}
+.why_us_panel .panel-heading{
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    border-bottom: 0px;
+}
+.why_us_panel .panel-body .media{
+    color: #fff;
+    position: relative;
+}
+.why_us_panel .panel-body .media h5{
+    font-size: 16px;
+}
+.why_us_panel .panel-body .media .media-body{
+    padding-left: 10px;
+}
+.why_us_panel .panel-body {
+    padding-top: 30px;
+}
+/*.why_us_panel .panel-body .media:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 13%;
+    background: rgba(204, 204, 204, 0.36);
+    transition: 0.5s;
+}*/
+.why_us_panel .panel-heading:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -2px;
+    /* margin: 0 auto; */
+    left: 17px;
+    right: 0;
+    width: 36%;
+    background: #dff0d8;
+    transition: 0.5s;
+}
+.centermenu .panel{
+    border-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.centermenu .panel-body{
+    padding-top: 0;
+}
+.centermenu .table_list{
+    border: 2px solid transparent;
+    /* //box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05); */
+    margin-bottom: 15px;
+    border: 2px solid #efefef;
+}
+.centermenu .table_list:hover{
+    border: 2px solid #04a9f4;
+}
+.no_lr_padding{
+    padding: 10px 0px;
+}
+.homepage .main_row{
+    padding: 0 50px;
+}
+.table_list:nth-child(even) .car_details{
+    /* //background-color: #fcfcfc; */
+}
+.no_border{
+    border-bottom: none;
+}
+.sidemenu2 .panel-heading{
+    font-size: 18px;
+    color: #1fadf4;
+}
+a[aria-expanded="true"]:after{
+    content: "\f106";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+pagination-controls
+{
+    padding:12px;
+}
+
+@media screen and (max-width: 767px){
+    .start_price{
+        padding: 5px 15px;
+    }
+}
+body{
+    background-color: #eee;
+}
+.search-row{
+    background-color: #fff;
+    padding: 0 15px;
+    
+}
+.box
+{
+    width:auto;
+    height:auto;
+    background-color:transparent;
+    padding:30px 0px;
+    text-align: center;
+}
+.vert_bottom{
+    vertical-align: bottom;
+}
+.vert_bottom div{
+    float: left;
+} 
+.mydp{
+    float: left;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    width: 191px;
+    /* float: left; */
+    margin-right: 5px;
+    display: inline-block;
+    
+    margin: 10px 0;
+
+    
+}
+.form-group .form-control{
+    border-radius: 0px;
+}
+.form-group.small {
+    width: 138px;
+    display: inline-block;
+}
+.search{
+    width: 134px;
+    display: inline-block;
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
+
+.left
+{
+    background-color: transparent;
+    padding-right: 0;
+}
+.right
+{
+    background-color: transparent;
+    padding-left: 0;
+}
+
+.last{
+    padding-left: 0;
+    text-align: left;
+}
+
+
+@media only screen and (min-width: 835px) and (max-width: 1199px){
+    .search{
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .search{
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width: 543px) {
+    .search-row .form-group{
+        width: 48%;
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .search-row .form-group{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .search-row .search{
+        width: 100%;
+        
+    }
+}
